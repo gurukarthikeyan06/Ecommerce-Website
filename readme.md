@@ -41,14 +41,6 @@ To design and develop a **responsive e-commerce frontend** that:
 
 ---
 
-## 📁 Project Structure
-
-```
-ecommerce/
-│── index.html
-│── style.css
-│── script.js
-
 
 ## ⚙️ Core Functionalities
 
@@ -87,6 +79,3 @@ ecommerce/
 ## 🙌 Acknowledgement
 
 This project is developed as part of the **RISE Internship Program** to gain real-world experience in building scalable frontend applications.
-
-
-⭐ *If you found this project useful, give it a star on GitHub!*

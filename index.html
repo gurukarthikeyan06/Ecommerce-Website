@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>E-Commerce Store</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+<!-- Navbar -->
+<nav class="flex justify-between p-4 bg-blue-600 text-white">
+  <h1 class="text-xl font-bold">ShopX</h1>
+
+  <input id="search" type="text" placeholder="Search..."
+    class="px-2 text-black">
+
+  <button onclick="toggleCart()">
+    🛒 Cart (<span id="cartCount">0</span>)
+  </button>
+</nav>
+
+<!-- Filters -->
+<div class="p-4">
+  <button onclick="filterCategory('all')" class="mr-2">All</button>
+  <button onclick="filterCategory('electronics')">Electronics</button>
+  <button onclick="filterCategory('fashion')">Fashion</button>
+</div>
+
+<!-- Products -->
+<div id="products"
+  class="grid md:grid-cols-4 gap-4 p-4">
+</div>
+
+<!-- Cart Sidebar -->
+<div id="cart"
+  class="fixed right-0 top-0 w-80 h-full bg-white shadow-lg p-4 hidden">
+
+  <h2 class="text-xl mb-4">Cart</h2>
+  <div id="cartItems"></div>
+
+  <h3 class="mt-4">Total: ₹<span id="total">0</span></h3>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
